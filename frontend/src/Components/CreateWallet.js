@@ -14,7 +14,9 @@ export default function CreateWallet() {
             ownerName: walletName === '' ? null : walletName,
             walletId: walletId === '' ? null : walletId
         }
-        await axios.post('http://localhost:8000/api/createWallet/', wallet)
+        await axios.post('/api/createWallet/', wallet)
+        setWalletId('')
+        setWalletName('')
         context.getWallets()
         context.handleBackdrop(false)
     }

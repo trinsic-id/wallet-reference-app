@@ -20,7 +20,7 @@ export default function AcceptConnection(props) {
     const handleAcceptConnection = async () => {
         context.handleBackdrop(true)
         try {
-            const response = await axios.post('http://localhost:8000/api/acceptConnection/', {
+            const response = await axios.post('/api/acceptConnection/', {
                 inviteUrl: connectionUrl,
                 walletId: props.walletId
             })

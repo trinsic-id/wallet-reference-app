@@ -15,15 +15,12 @@ const client = new WalletServiceClient(
 // The wallet name or ID do not get passed correctly
 
 router.post('/createWallet/', async function (req, res) {
-  let ownerName = req.body.ownerName
-  let walletId = req.body.walletId
   let wallet = await client.createWallet({
     body: {
-      ownerName: 'Gage iPhone Wallet',
-      walletId: walletId
+      ownerName: req.body.ownerName,
+      walletId: req.body.walletId
     }
   })
-  console.log(wallet)
   res.sendStatus(200)
 })
 

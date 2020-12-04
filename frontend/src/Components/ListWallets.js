@@ -17,7 +17,7 @@ export default function ListWallets() {
 
     const deleteWallet = async (walletId) => {
         context.handleBackdrop(true)
-        const response = await axios.post('http://localhost:8000/api/deleteWallet/', { walletId: walletId })
+        const response = await axios.post('/api/deleteWallet/', { walletId: walletId })
         console.log(response)
         context.getWallets()
         context.handleBackdrop(false)

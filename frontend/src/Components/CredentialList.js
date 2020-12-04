@@ -34,8 +34,8 @@ export default function CredentialList(props) {
     }
 
     const getCredentials = async (walletId) => {
-        const creds = await axios.get(`http://localhost:8000/api/listCredentials/${walletId}`)
-        const connections = await axios.get(`http://localhost:8000/api/listConnections/${walletId}`)
+        const creds = await axios.get(`/api/listCredentials/${walletId}`)
+        const connections = await axios.get(`/api/listConnections/${walletId}`)
         let credentialsWithConnections = creds.data.filter(cred => cred.state === 'Issued')
         for(let cred of credentialsWithConnections) {
             cred['connectionName'] = connections.data.filter(connection => connection.connectionId === cred.connectionId)[0].name

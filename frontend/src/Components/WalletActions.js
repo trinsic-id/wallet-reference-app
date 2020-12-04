@@ -38,14 +38,14 @@ export default function WalletActions(props) {
     const [verificationActions, setVerificationActions] = useState([])
 
     const getActions = async () => {
-        const actions = await axios.get(`http://localhost:8000/api/listCredentials/${props.walletId}`)
-        const verifications = await axios.get(`http://localhost:8000/api/listVerifications/${props.walletId}`)
+        const actions = await axios.get(`/api/listCredentials/${props.walletId}`)
+        const verifications = await axios.get(`/api/listVerifications/${props.walletId}`)
         setVerificationActions(verifications.data.filter(verification => verification.state === 'Requested'))
         setCredentialActions(actions.data.filter(cred => cred.state === 'Offered'))        
     }
 
     const getAvailableCredentials = async (verificationId) => {
-        const possibleCredentials = await axios.get(`http://localhost:8000/api/listAvailableCredentials/${props.walletId}/${verificationId}`)
+        const possibleCredentials = await axios.get(`/api/listAvailableCredentials/${props.walletId}/${verificationId}`)
         setAvailableCredentials(possibleCredentials.data[0])
     }
 
@@ -61,7 +61,7 @@ export default function WalletActions(props) {
     const handleCredentialAccept = async () => {
         context.handleBackdrop(true)
         handleCloseActionDialog()
-        const response = await axios.post(`http://localhost:8000/api/acceptCredential/${props.walletId}/${currentAction.credentialId}/`)
+        const response = await axios.post(`/api/acceptCredential/${props.walletId}/${currentAction.credentialId}/`)
         console.log('acceptance', response.data)
         let actions = credentialActions
         actions = actions.filter(action => action.credentialId != currentAction.credentialId)
@@ -84,7 +84,7 @@ export default function WalletActions(props) {
 
     const proveVerificationRequest = async (verificationId) => {
         handleVerificationCloseDialog()
-        const response = await axios.post(`http://localhost:8000/api/submitVerification/${props.walletId}/${verificationId}`)
+        const response = await axios.post(`/api/submitVerification/${props.walletId}/${verificationId}`)
         console.log(response)
     }
 

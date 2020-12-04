@@ -23,8 +23,8 @@ export default class ContextProvider extends Component {
 
     getCredentials = async (walletId) => {
         this.handleBackdrop(true)
-        const creds = await axios.get(`http://localhost:8000/api/listCredentials/${walletId}`)
-        const connections = await axios.get(`http://localhost:8000/api/listConnections/${walletId}`)
+        const creds = await axios.get(`/api/listCredentials/${walletId}`)
+        const connections = await axios.get(`/api/listConnections/${walletId}`)
         let credentialsWithConnections = creds.data.filter(cred => cred.state === 'Issued')
         for(let cred of credentialsWithConnections) {
             cred['connectionName'] = connections.data.filter(connection => connection.connectionId === cred.connectionId)[0].name
@@ -40,7 +40,7 @@ export default class ContextProvider extends Component {
 
     getWallets = async () => {
         this.handleBackdrop(true)
-        const wallets = await axios.get('http://localhost:8000/api/listWallets/')
+        const wallets = await axios.get('/api/listWallets/')
         this.setState({
             ...this.state,
             wallets: wallets.data

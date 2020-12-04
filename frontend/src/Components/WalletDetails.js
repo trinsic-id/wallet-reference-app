@@ -35,7 +35,7 @@ export default function WalletDetails() {
     }, [])
 
     const fetchData = async () => {
-        const wallets = await axios.get('http://localhost:8000/api/listWallets/')
+        const wallets = await axios.get('/api/listWallets/')
         const wal = wallets.data.filter(wallet => wallet.walletId === id)[0]
         setCurrentWallet(wal)
     }
