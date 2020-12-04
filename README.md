@@ -35,3 +35,8 @@ After creating the new organization you are ready to get started
 4. View wallet details by clicking on the blue arrow next to a wallet
 5. Here you can see pending actions, view existing credentials, and accept connection requests
 ![wallet details](assets/walletDetails.png)
+
+### Wallet API Documentation
+For more information on the wallet API visit the documentation at [docs.trinsic.id](https://docs.trinsic.id).
+
+> Contact <support@trinsic.com> for any questions.
