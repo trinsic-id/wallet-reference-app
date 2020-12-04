@@ -2,7 +2,7 @@
 This demo shows how to use Trinsic's Wallet API to manage custodial wallets under your Trinsic account. It is a Node.js backend which makes calls to the Trinsic Wallet API using the javascript service client.
 
 ## Use Case
-In this very simple use caseyou control custodial wallets for an organization. Each wallet has the ability to make connections, accept credentials, and prove verification requests.
+In this very simple use case you control custodial wallets for an organization. Each wallet has the ability to make connections, accept credentials, and prove verification requests.
 
 ## Prerequisites:
 - <a href="https://www.npmjs.com/get-npm" target="_blank">NPM</a>
