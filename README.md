@@ -11,6 +11,7 @@ In this very simple use case you control custodial wallets for an organization. 
 
 ### Download Project and Install Dependencies
 1. Clone the repository
+- `git clone https://github.com/trinsic-id/wallet-reference-app.git`
 2. Navigate to the project directory
 - `cd wallet-reference-app`
 3. Install dependencies
@@ -21,6 +22,7 @@ In this very simple use case you control custodial wallets for an organization. 
 
 ### Register your organization
 1. Create a new organization and select the sovrin staging network.
+![new organization](assets/organization.png)
 3. Click on the new organization tile to open the organization tab.
 4. In the `.env` file, add your organization's access token to the `ACCESS_TOKEN` field.
 
@@ -29,5 +31,12 @@ After creating the new organization you are ready to get started
 1. Run the server with `npm start`
 2. Navigate to <a href="http://localhost:8000" target="_blank">localhost:8000</a> to see the web app
 3. On the web app create a wallet by filling in the information on the left
+![wallet home](assets/walletHome.png)
 4. View wallet details by clicking on the blue arrow next to a wallet
 5. Here you can see pending actions, view existing credentials, and accept connection requests
+![wallet details](assets/walletDetails.png)
+
+### Wallet API Documentation
+For more information on the wallet API visit the documentation at [docs.trinsic.id](https://docs.trinsic.id/reference).
+
+> Contact <support@trinsic.com> for any questions.
