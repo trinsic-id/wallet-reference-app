@@ -5,3 +5,4 @@ package-lock.json
 .idea
 frontend/node_modules
 frontend/package-lock.lock
+.DS_Store
