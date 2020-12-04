@@ -1,0 +1,7 @@
+node_modules/
+.env
+package-lock.json
+.vscode/
+.idea
+frontend/node_modules
+frontend/yarn.lock

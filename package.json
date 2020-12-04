@@ -1,0 +1,21 @@
+{
+  "name": "provider-reference-app",
+  "version": "1.1.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@trinsic/service-clients": "^1.1.4220",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "~1.9.1",
+    "ngrok": "^3.3.0",
+    "request": "^2.88.2"
+  }
+}
