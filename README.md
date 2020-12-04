@@ -22,7 +22,7 @@ In this very simple use caseyou control custodial wallets for an organization. E
 
 ### Register your organization
 1. Create a new organization and select the sovrin staging network.
-    - Picture here
+![new organization](assets/organization.png)
 3. Click on the new organization tile to open the organization tab.
 4. In the `.env` file, add your organization's access token to the `ACCESS_TOKEN` field.
 
@@ -31,7 +31,7 @@ After creating the new organization you are ready to get started
 1. Run the server with `npm start`
 2. Navigate to <a href="http://localhost:8000" target="_blank">localhost:8000</a> to see the web app
 3. On the web app create a wallet by filling in the information on the left
-    - Picture
+![wallet home](assets/walletHome.png)
 4. View wallet details by clicking on the blue arrow next to a wallet
 5. Here you can see pending actions, view existing credentials, and accept connection requests
-    - Picture
+![wallet details](assets/walletDetails.png)
