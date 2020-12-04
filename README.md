@@ -37,6 +37,6 @@ After creating the new organization you are ready to get started
 ![wallet details](assets/walletDetails.png)
 
 ### Wallet API Documentation
-For more information on the wallet API visit the documentation at [docs.trinsic.id](https://docs.trinsic.id).
+For more information on the wallet API visit the documentation at [docs.trinsic.id](https://docs.trinsic.id/reference).
 
 > Contact <support@trinsic.com> for any questions.
