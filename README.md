@@ -11,7 +11,7 @@ In this very simple use case you control custodial wallets for an organization. 
 
 ### Download Project and Install Dependencies
 1. Clone the repository
-- `git clone put-repo-here`
+- `git clone https://github.com/trinsic-id/wallet-reference-app.git`
 2. Navigate to the project directory
 - `cd wallet-reference-app`
 3. Install dependencies
