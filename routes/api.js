@@ -15,11 +15,11 @@ const client = new WalletServiceClient(
 router.post('/createWallet/', async function (req, res) {
   let wallet = await client.createWallet({
     body: {
-      ownerName: req.body.ownerName,
-      walletId: req.body.walletId
+      walletId: req.body.walletId,
+      ownerName: req.body.ownerName
     }
   })
-  res.sendStatus(200)
+  res.status(200).send(wallet)
 })
 
 // returns all the wallets for the organization

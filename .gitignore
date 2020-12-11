@@ -6,3 +6,4 @@ package-lock.json
 frontend/node_modules
 frontend/package-lock.lock
 .DS_Store
+.vscode/
