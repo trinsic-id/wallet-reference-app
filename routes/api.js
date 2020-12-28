@@ -14,10 +14,8 @@ const client = new WalletServiceClient(
 // creates a wallet with a name and id
 router.post('/createWallet/', async function (req, res) {
   let wallet = await client.createWallet({
-    body: {
       walletId: req.body.walletId,
       ownerName: req.body.ownerName
-    }
   })
   res.status(200).send(wallet)
 })
