@@ -23,8 +23,8 @@ In this very simple use case you control custodial wallets for an organization. 
 ### Register your organization
 1. Create a new organization and select the sovrin staging network.
 ![new organization](assets/organization.png)
-3. Click on the new organization tile to open the organization tab.
-4. In the `.env` file, add your organization's access token to the `ACCESS_TOKEN` field.
+1. Click on the **Detials** button on the new organization tile.
+2. In the `.env` file, add your organization's API Key to the `ACCESS_TOKEN` field.
 
 ### Running the application
 After creating the new organization you are ready to get started
