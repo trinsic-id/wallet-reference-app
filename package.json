@@ -7,7 +7,11 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
     "@trinsic/service-clients": "^1.1.4220",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
@@ -16,6 +20,9 @@
     "express": "^4.17.1",
     "morgan": "~1.9.1",
     "ngrok": "^3.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "request": "^2.88.2"
   }
 }
